@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <main>
-    <h1>WELCOME TO PERSONALITY TEST</h1>
-  </main>
+  <router-view/>
 </template>
 
 <style scoped>
