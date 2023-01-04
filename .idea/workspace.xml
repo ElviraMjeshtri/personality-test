@@ -4,23 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c435d5c6-44d7-42d0-9f89-8c88dc39fb84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="c435d5c6-44d7-42d0-9f89-8c88dc39fb84" name="Changes" comment="personality-test | backend | Configure in memory database h2 and add JPA dependency">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -40,17 +50,76 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Elvira Mjeshtri/DEVELOPMENT/personality-test/backend/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a",
+    "ts.external.directory.path": "C:\\Users\\Elvira Mjeshtri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\223.8214.52\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\backend\src\main\resources" />
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\backend\src\main\java" />
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend" />
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\front-end" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.elvira" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.QuestionRepositoryTest.testFindAll">
+    <configuration name="QuestionRepositoryTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.elvira.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.elvira.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.elvira.repository.QuestionRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.elvira.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.elvira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuestionRepositoryTest.testFindAll" />
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +129,53 @@
       <option name="presentableId" value="Default" />
       <updated>1672153975284</updated>
       <workItem from="1672153976580" duration="630000" />
+      <workItem from="1672216145331" duration="6536000" />
+      <workItem from="1672222715117" duration="7449000" />
+      <workItem from="1672820847137" duration="11189000" />
     </task>
+    <task id="LOCAL-00001" summary="personality-test | frontend | Create spring boot frontend module and add vue project to module">
+      <created>1672219861016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672219861016</updated>
+    </task>
+    <task id="LOCAL-00002" summary="personality-test | backend | Configure in memory database h2 and add JPA dependency">
+      <created>1672222127236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672222127236</updated>
+    </task>
+    <task id="LOCAL-00003" summary="personality-test | backend | Create main entities and add initial data for table Answer and Question">
+      <created>1672223758329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672223758329</updated>
+    </task>
+    <task id="LOCAL-00004" summary="personality-test | backend | Create project structure with controllers, entities and repository. Create Rest controller with getNextQuestion method">
+      <created>1672236787963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672236787963</updated>
+    </task>
+    <task id="LOCAL-00005" summary="personality-test | backend | Add testing package and refactor required dependencies and code">
+      <created>1672830515861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672830515861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="personality-test | backend | Add JPaTest for findAll method repository">
+      <created>1672840547614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672840547614</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +183,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="personality-test | frontend | Create spring boot frontend module and add vue project to module" />
+    <MESSAGE value="personality-test | backend | Configure in memory database h2 and add JPA dependency" />
+    <MESSAGE value="personality-test | backend | Create main entities and add initial data for table Answer and Question" />
+    <MESSAGE value="personality-test | backend | Create project structure with controllers, entities and repository. Create Rest controller with getNextQuestion method" />
+    <MESSAGE value="personality-test | backend | Add testing package and refactor required dependencies and code" />
+    <MESSAGE value="personality-test | backend | Add JPaTest for findAll method repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="personality-test | backend | Add JPaTest for findAll method repository" />
   </component>
 </project>
