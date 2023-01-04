@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.elvira.entity;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.elvira;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

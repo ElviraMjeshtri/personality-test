@@ -1,8 +1,7 @@
-package org.example.controller;
+package org.elvira.controller;
 
-import org.example.entity.Question;
-import org.example.repository.AnswerRepository;
-import org.example.repository.QuestionRepository;
+import org.elvira.entity.Question;
+import org.elvira.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -23,9 +22,6 @@ public class PersonalityTestController {
     @Autowired
     QuestionRepository questionRepository;
 
-    @Autowired
-    AnswerRepository answerRepository;
-
     @GetMapping("/nextQuestion")
     public ResponseEntity<Map<String, Object>> getNextQuestion(
             @RequestParam(defaultValue = "0") int page,
@@ -45,6 +41,5 @@ public class PersonalityTestController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
 
 }
