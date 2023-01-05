@@ -1,5 +1,7 @@
 export default {
     questionDataList: [],
-    points: 0,
+    selectedAnswers: [],
+    isTestCompleted : false,
+    currentQuestionIndex : 0,
     result: ""
 }
