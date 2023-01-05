@@ -4,10 +4,11 @@ import router from "@/router";
 import './assets/main.css'
 import VueAxios from "vue-axios";
 import axios from "axios";
+import store from "./store/store"
 
 
 createApp(App)
     .use(router)
     .use(VueAxios, axios)
-    .provide('axios', app.config.globalProperties.axios)
+    .use(store)
     .mount('#app')

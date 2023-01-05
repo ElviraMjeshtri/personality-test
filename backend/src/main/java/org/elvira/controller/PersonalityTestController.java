@@ -22,20 +22,12 @@ public class PersonalityTestController {
     @Autowired
     QuestionRepository questionRepository;
 
-    @GetMapping("/nextQuestion")
-    public ResponseEntity<Map<String, Object>> getNextQuestion(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "1") int size
-    ) {
+    @GetMapping("/listQuestions")
+    public ResponseEntity<Map<String, Object>> getNextQuestion() {
         try {
-            Pageable paging = PageRequest.of(page, size);
-            Page<Question> pageQuestions = questionRepository.findAll(paging);
-            List<Question> questions = pageQuestions.getContent();
+            List<Question> questions = questionRepository.findAll();
             Map<String, Object> response = new HashMap<>();
             response.put("questions", questions);
-            response.put("currentPage", pageQuestions.getNumber());
-            response.put("totalItems", pageQuestions.getTotalElements());
-            response.put("totalPages", pageQuestions.getTotalPages());
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

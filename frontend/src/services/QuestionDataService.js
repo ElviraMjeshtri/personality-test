@@ -1,7 +1,7 @@
 import http from "../services/http-common"
 
 class QuestionDataService {
-    getAll() {
+    getAllQuestions() {
         return http.get("/tutorials");
     }
 }
