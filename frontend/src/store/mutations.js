@@ -2,7 +2,7 @@ import {
     FETCH_QUESTION_LIST,
     FETCH_SELECTED_ANSWERS,
     FETCH_IS_TEST_COMPLETED,
-    FETCH_CURRENT_QUESTION_INDEX
+    FETCH_CURRENT_QUESTION_INDEX, FETCH_IS_ANSWER_SELECTED
 } from "./types";
 
 const mutations = {
@@ -17,6 +17,9 @@ const mutations = {
     },
     [FETCH_CURRENT_QUESTION_INDEX](state, payload) {
         state.currentQuestionIndex = payload;
+    },
+    [FETCH_IS_ANSWER_SELECTED](state, payload) {
+        state.isAnswerSelected = payload;
     }
 
 };

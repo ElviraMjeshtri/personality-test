@@ -3,5 +3,6 @@ export default {
     selectedAnswers: [],
     isTestCompleted : false,
     currentQuestionIndex : 0,
+    isAnswerSelected: false,
     result: ""
 }
