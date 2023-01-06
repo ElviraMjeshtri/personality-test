@@ -1,37 +1,46 @@
 package org.elvira.controller;
 
-import org.elvira.entity.Question;
-import org.elvira.repository.QuestionRepository;
+import org.elvira.entity.PersonalityType;
+import org.elvira.service.question.QuestionService;
+import org.elvira.service.result.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:8082")
 @RestController
 @RequestMapping("/api")
 public class PersonalityTestController {
-
     @Autowired
-    QuestionRepository questionRepository;
+    QuestionService questionService;
+    @Autowired
+    ResultService resultService;
 
-    @GetMapping("/listQuestions")
+    @GetMapping("/questions")
     public ResponseEntity<Map<String, Object>> getNextQuestion() {
         try {
-            List<Question> questions = questionRepository.findAll();
             Map<String, Object> response = new HashMap<>();
-            response.put("questions", questions);
+            response.put("questions", questionService.getListOfQuestionAndAnswers());
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
+    @GetMapping("/getResult/{answerIndexes}")
+    public ResponseEntity<Map<String, Object>> getPersonalityResult(@PathVariable String[] answerIndexes) {
+        try {
+            Map<String, Object> response = new HashMap<>();
+            PersonalityType personalityType = resultService.calculateTestResults((ArrayList<String>) Arrays.asList(answerIndexes));
+            response.put("result", resultService.getResult(personalityType));
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }

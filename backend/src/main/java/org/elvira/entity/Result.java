@@ -1,38 +1,25 @@
 package org.elvira.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name="results")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Result {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "result_id", nullable = false)
     private Long resultId;
-    private Long questionId;
-    private Long answerId;
+    private String title;
+    @Column(columnDefinition = "TEXT")
+    private String description;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "personality_type")
+    private PersonalityType  personalityType;
 
-    public Long getQuestionId() {
-        return questionId;
-    }
-
-    public void setQuestionId(Long questionId) {
-        this.questionId = questionId;
-    }
-
-    public Long getAnswerId() {
-        return answerId;
-    }
-
-    public void setAnswerId(Long answerId) {
-        this.answerId = answerId;
-    }
-
-    public Long getResultId() {
-        return resultId;
-    }
-
-    public void setResultId(Long resultId) {
-        this.resultId = resultId;
-    }
 }

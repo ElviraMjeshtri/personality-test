@@ -1,35 +1,17 @@
 package org.elvira.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Embeddable
+@Getter
+@Setter
+@NoArgsConstructor
 public class Answer {
     private String answer;
-    private int precedence;
-    private int points;
-
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
-
-    public int getPrecedence() {
-        return precedence;
-    }
-
-    public void setPrecedence(int precedence) {
-        this.precedence = precedence;
-    }
-
-    public int getPoints() {
-        return points;
-    }
-
-    public void setPoints(int points) {
-        this.points = points;
-    }
+    @Column(name = "answer_index")
+    private String answerIndex;
 
 }
