@@ -1,14 +1,15 @@
-package org.elvira.service.result;
+package org.elvira.backend.service.result;
 
-import org.elvira.entity.PersonalityType;
-import org.elvira.entity.Result;
-import org.elvira.repository.ResultRepository;
-import org.elvira.service.result.ResultService;
+import org.elvira.backend.entity.PersonalityType;
+import org.elvira.backend.entity.Result;
+import org.elvira.backend.repository.ResultRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
+@Service
 public class ResultServiceImpl implements ResultService {
 
     @Autowired

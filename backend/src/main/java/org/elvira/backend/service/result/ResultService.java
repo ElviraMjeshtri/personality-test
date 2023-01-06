@@ -1,12 +1,10 @@
-package org.elvira.service.result;
+package org.elvira.backend.service.result;
 
-import org.elvira.entity.PersonalityType;
-import org.elvira.entity.Result;
-import org.springframework.stereotype.Service;
+import org.elvira.backend.entity.PersonalityType;
+import org.elvira.backend.entity.Result;
 
 import java.util.ArrayList;
 
-@Service
 public interface ResultService {
     public PersonalityType calculateTestResults(ArrayList<String> answerList);
 

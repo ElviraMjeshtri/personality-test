@@ -1,6 +1,6 @@
-package org.elvira.repository;
+package org.elvira.backend.repository;
 
-import org.elvira.entity.Question;
+import org.elvira.backend.entity.Question;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

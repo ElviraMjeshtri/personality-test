@@ -1,4 +1,4 @@
-package org.elvira.entity;
+package org.elvira.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

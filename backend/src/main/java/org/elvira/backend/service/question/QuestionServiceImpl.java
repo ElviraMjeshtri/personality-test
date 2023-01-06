@@ -1,12 +1,13 @@
-package org.elvira.service.question;
+package org.elvira.backend.service.question;
 
-import org.elvira.entity.Question;
-import org.elvira.repository.QuestionRepository;
-import org.elvira.service.question.QuestionService;
+import org.elvira.backend.entity.Question;
+import org.elvira.backend.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class QuestionServiceImpl implements QuestionService {
 
     @Autowired

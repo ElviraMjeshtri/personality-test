@@ -1,8 +1,8 @@
-package org.elvira.controller;
+package org.elvira.backend.controller;
 
-import org.elvira.entity.PersonalityType;
-import org.elvira.service.question.QuestionService;
-import org.elvira.service.result.ResultService;
+import org.elvira.backend.entity.PersonalityType;
+import org.elvira.backend.service.question.QuestionService;
+import org.elvira.backend.service.result.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
