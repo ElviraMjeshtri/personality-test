@@ -1,9 +1,9 @@
 <template>
-  <span class="user-area">
-    <QuestionComponent :question="getCurrentQuestion"
-                       :list-size="getQuestionListSize"
-    ></QuestionComponent>
-  </span>
+
+  <QuestionComponent :question="getCurrentQuestion"
+                     :list-size="getQuestionListSize"
+  ></QuestionComponent>
+
 
 </template>
 
