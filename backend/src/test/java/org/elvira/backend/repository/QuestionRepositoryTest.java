@@ -20,9 +20,16 @@ public class QuestionRepositoryTest {
 
     @Test
     public void testFindAll(){
+        List<Question> questions = questionRepository.findAll();
+        assertThat(questions).hasSize(5);
+    }
+
+    @Test
+    public void testFindAllByPage(){
         Pageable paging = PageRequest.of(1, 1);
         Page<Question> pageQuestions = questionRepository.findAll(paging);
         List<Question> questions = pageQuestions.getContent();
         assertThat(questions).hasSize(1);
     }
+
 }
