@@ -8,10 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api")
@@ -32,11 +29,12 @@ public class PersonalityTestController {
         }
     }
 
-    @GetMapping("/getResult/{answerIndexes}")
-    public ResponseEntity<Map<String, Object>> getPersonalityResult(@PathVariable String[] answerIndexes) {
+    @GetMapping("/getResult/{answers}")
+    public ResponseEntity<Map<String, Object>> getPersonalityResult(@PathVariable String[] answers) {
         try {
             Map<String, Object> response = new HashMap<>();
-            PersonalityType personalityType = resultService.calculateTestResults((ArrayList<String>) Arrays.asList(answerIndexes));
+            List<String> answersList= Arrays.asList(answers);
+            PersonalityType personalityType = resultService.calculateTestResults(answersList);
             response.put("result", resultService.getResult(personalityType));
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {

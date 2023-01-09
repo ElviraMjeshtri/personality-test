@@ -3,10 +3,10 @@ package org.elvira.backend.service.result;
 import org.elvira.backend.entity.PersonalityType;
 import org.elvira.backend.entity.Result;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ResultService {
-    public PersonalityType calculateTestResults(ArrayList<String> answerList);
+    PersonalityType calculateTestResults(List<String> answerList);
 
-    public Result getResult(PersonalityType personalityType);
+    Result getResult(PersonalityType personalityType);
 }

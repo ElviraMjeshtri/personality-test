@@ -4,5 +4,5 @@ export default {
     isTestCompleted : false,
     currentQuestionIndex : 0,
     isAnswerSelected: false,
-    result: ""
+    result: []
 }

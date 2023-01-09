@@ -6,8 +6,8 @@ import org.elvira.backend.repository.ResultRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 @Service
 public class ResultServiceImpl implements ResultService {
@@ -16,7 +16,7 @@ public class ResultServiceImpl implements ResultService {
     ResultRepository resultRepository;
 
     @Override
-    public PersonalityType calculateTestResults(ArrayList<String> answerList) {
+    public PersonalityType calculateTestResults(List<String> answerList) {
         int aOccurrences = Collections.frequency(answerList, "a");
         int bOccurrences = Collections.frequency(answerList, "b");
         int cOccurrences = Collections.frequency(answerList, "c");

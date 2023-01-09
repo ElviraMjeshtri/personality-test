@@ -41,6 +41,7 @@
 <script>
 import {useStore} from "vuex";
 import {computed, ref} from "vue";
+import {useRoute, useRouter} from 'vue-router';
 
 export default {
   name: "QuestionComponent",
@@ -50,22 +51,25 @@ export default {
   },
   setup(props) {
     const store = useStore()
-    let selectedAnswers = computed(() => store.state.selectedAnswers)
+    const router = useRouter();
+    const route = useRoute()
+    /*let selectedAnswers = computed(() => store.state.selectedAnswers)*/
     let isTestCompleted = computed(() => store.state.isTestCompleted)
     let currentQuestionIndex = computed(() => store.state.currentQuestionIndex)
     let isAnswerSelected = computed(() => store.state.isAnswerSelected)
+    let selectedAnswers = ref([])
 
     const selectedAnswer = ref('');
     function addAnswerToList (e){
       store.commit('fetchIsAnswerSelected', true)
-      const answer = selectedAnswers.value[currentQuestionIndex.value];
       let answerIndex = e.target.value
-      if(answer === undefined){
+      if(selectedAnswers.value[currentQuestionIndex.value] === undefined){
         selectedAnswers.value.push(answerIndex)
       }else {
         selectedAnswers.value.splice(currentQuestionIndex.value, 1)
         selectedAnswers.value.push(answerIndex)
       }
+      store.commit('fetchSelectedAnswers', selectedAnswers)
     }
     function goToNextQuestion() {
       store.commit('fetchIsAnswerSelected', false)
@@ -81,7 +85,9 @@ export default {
     }
 
     function showResults() {
-
+        router.push({
+          name: 'Results'
+        });
     }
 
     return {
