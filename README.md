@@ -1,6 +1,8 @@
 Technology Used:
-Vuejs 3.0
-Spring boot
+
+1. Vuejs 3.0
+
+2. Spring boot
 
 Project setup
 Please follow below mentioned step to run this project:
