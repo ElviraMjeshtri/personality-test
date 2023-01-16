@@ -26,3 +26,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+/node/node.exe
+/node/npm
+/node/npx
+/node/npx.cmd
+/node/npm.cmd
