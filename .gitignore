@@ -1,5 +1,4 @@
 target/
-resources/public/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -41,3 +40,15 @@ build/
 ### Mac OS ###
 .DS_Store
 /.idea/
+
+/.idea/compiler.xml
+/.idea/workspace.xml
+/.idea/encodings.xml
+/.idea/jpa-buddy.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/backend/src/main/resources/public/favicon.ico
+/backend/src/main/resources/public/assets/img2-54187940.jpg
+/backend/src/main/resources/public/index.html
+/backend/src/main/resources/public/assets/index-4b418af4.css
+/backend/src/main/resources/public/assets/index-a80e6364.js
