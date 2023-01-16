@@ -1,7 +1,7 @@
-package org.elvira.backend.repository;
+package org.elvira.backend.repository.quiz;
 
-import org.elvira.backend.entity.PersonalityType;
-import org.elvira.backend.entity.Result;
+import org.elvira.backend.entity.quiz.PersonalityType;
+import org.elvira.backend.entity.quiz.Result;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ResultRepository extends JpaRepository<Result, Long> {

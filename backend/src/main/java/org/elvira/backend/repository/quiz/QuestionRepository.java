@@ -1,6 +1,6 @@
-package org.elvira.backend.repository;
+package org.elvira.backend.repository.quiz;
 
-import org.elvira.backend.entity.Question;
+import org.elvira.backend.entity.quiz.Question;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

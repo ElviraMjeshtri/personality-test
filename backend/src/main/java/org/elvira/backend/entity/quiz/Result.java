@@ -1,4 +1,4 @@
-package org.elvira.backend.entity;
+package org.elvira.backend.entity.quiz;
 
 import jakarta.persistence.*;
 import lombok.Getter;

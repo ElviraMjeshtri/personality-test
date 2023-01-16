@@ -1,7 +1,7 @@
 package org.elvira.backend.service.question;
 
-import org.elvira.backend.entity.Question;
-import org.elvira.backend.repository.QuestionRepository;
+import org.elvira.backend.entity.quiz.Question;
+import org.elvira.backend.repository.quiz.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

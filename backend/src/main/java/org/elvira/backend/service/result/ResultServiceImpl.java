@@ -1,8 +1,8 @@
 package org.elvira.backend.service.result;
 
-import org.elvira.backend.entity.PersonalityType;
-import org.elvira.backend.entity.Result;
-import org.elvira.backend.repository.ResultRepository;
+import org.elvira.backend.entity.quiz.PersonalityType;
+import org.elvira.backend.entity.quiz.Result;
+import org.elvira.backend.repository.quiz.ResultRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 package org.elvira.backend.service.result;
 
-import org.elvira.backend.entity.PersonalityType;
-import org.elvira.backend.entity.Result;
+import org.elvira.backend.entity.quiz.PersonalityType;
+import org.elvira.backend.entity.quiz.Result;
 
 import java.util.List;
 

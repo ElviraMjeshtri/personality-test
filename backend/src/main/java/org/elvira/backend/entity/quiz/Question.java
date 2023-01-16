@@ -1,9 +1,10 @@
-package org.elvira.backend.entity;
+package org.elvira.backend.entity.quiz;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.elvira.backend.entity.quiz.Answer;
 
 import java.util.List;
 
