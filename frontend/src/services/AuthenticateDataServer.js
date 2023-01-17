@@ -2,11 +2,11 @@ import http from "@/services/http-common";
 
 class AuthenticateDataService {
     doLogin(loginRequest) {
-        return http.post('/authenticate', loginRequest);
+        return http.post('/auth/authenticate', loginRequest);
     }
 
     doRegister(registerRequest) {
-        return http.post('/register', registerRequest);
+        return http.post('/auth/register', registerRequest);
     }
 
 }

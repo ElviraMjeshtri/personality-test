@@ -2,7 +2,7 @@ import http from "../services/http-common"
 
 class QuestionDataService {
     getAllQuestions() {
-        return http.get("/questions");
+        return http.get("/personalityTest/questions");
     }
 }
 

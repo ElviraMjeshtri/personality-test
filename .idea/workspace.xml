@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c435d5c6-44d7-42d0-9f89-8c88dc39fb84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/AuthenticateDataServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/controller/PersonalityTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/controller/PersonalityTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/getters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Quiz.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Quiz.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/repository/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/repository/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/AuthenticateDataServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/AuthenticateDataServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/QuestionDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/QuestionDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/ResultDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/ResultDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/http-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/http-common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +175,7 @@
       <workItem from="1673008024913" duration="5770000" />
       <workItem from="1673014529940" duration="2894000" />
       <workItem from="1673256522692" duration="12937000" />
-      <workItem from="1673942481877" duration="7105000" />
+      <workItem from="1673942481877" duration="9500000" />
     </task>
     <task id="LOCAL-00001" summary="personality-test | frontend | Create spring boot frontend module and add vue project to module">
       <created>1672219861016</created>
@@ -274,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673883258567</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="personality-test | frontend | Create store modules for quiz and authentication separatly">
+      <created>1673964094907</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673964094907</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +299,8 @@
     <MESSAGE value="personality-test | frontend | Add tailwindcss to style vue pages" />
     <MESSAGE value="personality-test | backend | Add service layer and implement new method to calculate results" />
     <MESSAGE value="personality-test | add files to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="personality-test | add files to gitignore" />
+    <MESSAGE value="personality-test | frontend | Create store modules for quiz and authentication separatly" />
+    <option name="LAST_COMMIT_MESSAGE" value="personality-test | frontend | Create store modules for quiz and authentication separatly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
