@@ -28,7 +28,7 @@ export default {
     const store = useStore()
     const router = useRouter();
     function retakeQuiz() {
-     store.commit("resetState")
+     store.commit("quiz/resetState")
       router.push({
         name: 'Quiz'
       });

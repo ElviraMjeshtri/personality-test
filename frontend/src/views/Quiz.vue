@@ -17,9 +17,9 @@ export default {
   components: {QuestionComponent},
   setup() {
     const store = useStore()
-    store.dispatch('fetchQuestionList')
-    const questionList = computed(() => store.state.questionDataList);
-    let currentQuestionIndex = computed(() => store.state.currentQuestionIndex)
+    store.dispatch('quiz/fetchQuestionList')
+    const questionList = computed(() => store.state.quiz.questionDataList);
+    let currentQuestionIndex = computed(() => store.state.quiz.currentQuestionIndex)
 
     const getCurrentQuestion = computed(() => {
       let question = questionList.value.questions[currentQuestionIndex.value];

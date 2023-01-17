@@ -4,25 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c435d5c6-44d7-42d0-9f89-8c88dc39fb84" name="Changes" comment="personality-test | backend | Add new method">
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/ResultDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c435d5c6-44d7-42d0-9f89-8c88dc39fb84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/AuthenticateDataServer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/quiz/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/controller/PersonalityTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/controller/PersonalityTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/service/result/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/service/result/ResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/service/result/ResultServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/elvira/backend/service/result/ResultServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/QuestionComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/QuestionComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ResultComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ResultComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Results.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Results.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/authenticate/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/quiz/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Quiz.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Quiz.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +35,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -77,36 +80,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elvira Mjeshtri/DEVELOPMENT/personality-test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b43fdd98b1fd705ae4c3a10cf25aad8a&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Elvira Mjeshtri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\223.8214.52\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Elvira Mjeshtri/DEVELOPMENT/personality-test/frontend/src/store/authenticate",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a",
+    "ts.external.directory.path": "C:\\Users\\Elvira Mjeshtri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\223.8214.52\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend\src\store\authenticate" />
       <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\backend\src\main\resources" />
       <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\backend\src\main\java" />
       <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend\src\store\quiz" />
       <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\frontend" />
       <recent name="C:\Users\Elvira Mjeshtri\DEVELOPMENT\personality-test\front-end" />
     </key>
@@ -183,6 +188,7 @@
       <workItem from="1673008024913" duration="5770000" />
       <workItem from="1673014529940" duration="2894000" />
       <workItem from="1673256522692" duration="12937000" />
+      <workItem from="1673942481877" duration="7105000" />
     </task>
     <task id="LOCAL-00001" summary="personality-test | frontend | Create spring boot frontend module and add vue project to module">
       <created>1672219861016</created>
@@ -261,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673017417076</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="personality-test | add files to gitignore">
+      <created>1673883258567</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673883258567</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +304,8 @@
     <MESSAGE value="personality-test | frontend | Add tailwindcss for styling the vue pages" />
     <MESSAGE value="personality-test | frontend | Add tailwindcss to style vue pages" />
     <MESSAGE value="personality-test | backend | Add service layer and implement new method to calculate results" />
-    <option name="LAST_COMMIT_MESSAGE" value="personality-test | backend | Add service layer and implement new method to calculate results" />
+    <MESSAGE value="personality-test | add files to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="personality-test | add files to gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

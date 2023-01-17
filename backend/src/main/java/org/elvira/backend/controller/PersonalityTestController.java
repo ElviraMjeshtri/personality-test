@@ -39,7 +39,7 @@ public class PersonalityTestController {
     public ResponseEntity<Map<String, Object>> getPersonalityResult(@PathVariable String[] answers) {
         try {
             Map<String, Object> response = new HashMap<>();
-            List<String> answersList= Arrays.asList(answers);
+            List<String> answersList = Arrays.asList(answers);
             PersonalityType personalityType = resultService.calculateTestResults(answersList);
             response.put("result", resultService.getResult(personalityType));
             return new ResponseEntity<>(response, HttpStatus.OK);

@@ -12,9 +12,9 @@ export default {
   components: {ResultComponent},
   setup() {
     const store = useStore()
-    let selectedAnswers = computed(() => store.state.selectedAnswers)
+    let selectedAnswers = computed(() => store.state.quiz.selectedAnswers)
     store.dispatch('fetchTestResult', selectedAnswers.value)
-    const testResult = computed(() => store.state.result);
+    const testResult = computed(() => store.state.quiz.result);
     return {
      testResult
     }

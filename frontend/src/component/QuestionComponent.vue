@@ -52,16 +52,14 @@ export default {
   setup(props) {
     const store = useStore()
     const router = useRouter();
-    const route = useRoute()
-    /*let selectedAnswers = computed(() => store.state.selectedAnswers)*/
-    let isTestCompleted = computed(() => store.state.isTestCompleted)
-    let currentQuestionIndex = computed(() => store.state.currentQuestionIndex)
-    let isAnswerSelected = computed(() => store.state.isAnswerSelected)
+    let isTestCompleted = computed(() => store.state.quiz.isTestCompleted)
+    let currentQuestionIndex = computed(() => store.state.quiz.currentQuestionIndex)
+    let isAnswerSelected = computed(() => store.state.quiz.isAnswerSelected)
     let selectedAnswers = ref([])
 
     const selectedAnswer = ref('');
     function addAnswerToList (e){
-      store.commit('fetchIsAnswerSelected', true)
+      store.commit('quiz/fetchIsAnswerSelected', true)
       let answerIndex = e.target.value
       if(selectedAnswers.value[currentQuestionIndex.value] === undefined){
         selectedAnswers.value.push(answerIndex)
@@ -69,18 +67,18 @@ export default {
         selectedAnswers.value.splice(currentQuestionIndex.value, 1)
         selectedAnswers.value.push(answerIndex)
       }
-      store.commit('fetchSelectedAnswers', selectedAnswers)
+      store.commit('quiz/fetchSelectedAnswers', selectedAnswers)
     }
     function goToNextQuestion() {
-      store.commit('fetchIsAnswerSelected', false)
+      store.commit('quiz/fetchIsAnswerSelected', false)
       selectedAnswer.value = '';
       if (currentQuestionIndex.value < props.listSize - 1) {
         const nextQuestionIndex = currentQuestionIndex.value + 1
-        store.commit('fetchCurrentQuestionIndex', nextQuestionIndex)
+        store.commit('quiz/fetchCurrentQuestionIndex', nextQuestionIndex)
         return
       }
       if(currentQuestionIndex.value === props.listSize - 1){
-        store.commit('fetchIsTestCompleted', true)
+        store.commit('quiz/fetchIsTestCompleted', true)
       }
     }
 
