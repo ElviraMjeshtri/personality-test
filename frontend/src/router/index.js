@@ -8,13 +8,13 @@ import Register from "@/views/Register.vue";
 const routes = [
     {
         path: "/",
-        name: "Login",
-        component: Login,
-    },
-    {
-        path: "/register",
         name: "Register",
         component: Register,
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
     },
     {
         path: "/home",
