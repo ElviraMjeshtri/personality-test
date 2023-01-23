@@ -3,7 +3,7 @@ import authHeader from "@/services/auth-header";
 
 class QuestionDataService {
     getAllQuestions() {
-        return http.get("/personalityTest/questions", {headers: authHeader()});
+        return http.get("/questions", {headers: authHeader()});
     }
 }
 

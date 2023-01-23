@@ -2,7 +2,7 @@ import http from "@/services/http-common";
 
 class AuthenticateDataService {
     doLogin(loginRequest) {
-        return http.post('/auth/authenticate', loginRequest)
+        return http.post('/authenticate', loginRequest)
             .then(response => {
                 if(response.data.accessToken){
                     localStorage.setItem('user', JSON.stringify(response.data))
@@ -15,7 +15,9 @@ class AuthenticateDataService {
     }
 
     doRegister(registerRequest) {
-        return http.post('/auth/register', registerRequest);
+        return http.post('/register', {
+            body: registerRequest,
+        });
     }
 
 }
