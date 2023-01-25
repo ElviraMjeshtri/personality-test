@@ -1,5 +1,7 @@
 <template>
-  <result-component :result="testResult.result"></result-component>
+  <result-comp
+
+      onent :result="testResult.result"></result-component>
 </template>
 
 <script>

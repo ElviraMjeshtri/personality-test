@@ -5,7 +5,7 @@
         <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
           Create and account
         </h1>
-        <form class="space-y-4 md:space-y-6">
+        <form class="space-y-4 md:space-y-6" v-on:submit.prevent="registerUser">
           <div>
             <label for="firstname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
             <input type="firstname"
@@ -72,7 +72,8 @@
           </div>
           <button
                   class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                  @click="registerUser">
+                  type="submit"
+                 >
             Create an account
           </button>
           <p class="text-sm font-light text-gray-500 dark:text-gray-400">
@@ -87,17 +88,22 @@
 <script>
 import {useStore} from "vuex";
 import {RegisterRequest} from "@/services/AuthenticateDataServer"
+import {useRouter} from "vue-router";
 
 
 export default {
   name: "Register",
   setup() {
     const store = useStore()
-    const registerRequest = RegisterRequest;
-    function registerUser() {
-     store.dispatch('authenticate/doRegister', registerRequest)
+    const router = useRouter();
+    let registerRequest = RegisterRequest;
+    function registerUser(e) {
+     store.dispatch('authenticate/doRegister', registerRequest).then(value => {
+       router.push({
+         name: 'Login'
+       })
+     })
     }
-
     return {
       registerUser,
       registerRequest
