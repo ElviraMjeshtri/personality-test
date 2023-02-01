@@ -8,7 +8,6 @@ import org.elvira.backend.service.auth.AuthenticationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:4000")
 @RestController
 @RequestMapping("/api/v1")
 @RequiredArgsConstructor
