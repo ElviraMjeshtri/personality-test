@@ -1,7 +1,5 @@
 <template>
-  <result-comp
-
-      onent :result="testResult.result"></result-component>
+  <result-component :result="testResult.result"></result-component>
 </template>
 
 <script>
@@ -15,7 +13,7 @@ export default {
   setup() {
     const store = useStore()
     let selectedAnswers = computed(() => store.state.quiz.selectedAnswers)
-    store.dispatch('fetchTestResult', selectedAnswers.value)
+    store.dispatch('quiz/fetchTestResult', selectedAnswers.value)
     const testResult = computed(() => store.state.quiz.result);
     return {
      testResult
